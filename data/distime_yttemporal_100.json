@@ -1,0 +1,790 @@
+[
+  {
+    "video": "yttemporal/videos/H8liIyNy-rE.mp4",
+    "query": "Using the textual query 'introduction to the cowbell fire in collier county and its current containment status.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> introduction to the cowbell fire in collier county and its current containment status.",
+    "start": 0.0,
+    "end": 15.0,
+    "duration": 125.55
+  },
+  {
+    "video": "yttemporal/videos/DDH0QjfzSPA.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'the host shares a personal anecdote about only dressing up as a cowboy once as a child and preferring to celebrate birthdays without costumes.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> the host shares a personal anecdote about only dressing up as a cowboy once as a child and preferring to celebrate birthdays without costumes.",
+    "start": 149.0,
+    "end": 219.0,
+    "duration": 339.71
+  },
+  {
+    "video": "yttemporal/videos/VWkuVAuXLNo.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'using a compass to mark the final size of the turning on the wood block.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> using a compass to mark the final size of the turning on the wood block.",
+    "start": 46.0,
+    "end": 59.0,
+    "duration": 164.88
+  },
+  {
+    "video": "yttemporal/videos/Kk9dQamDBSk.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'preparing the blueberry filling by mixing fresh blueberries with sugar, cornstarch, lemon zest, and lemon juice.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> preparing the blueberry filling by mixing fresh blueberries with sugar, cornstarch, lemon zest, and lemon juice.",
+    "start": 623.0,
+    "end": 759.0,
+    "duration": 1168.8
+  },
+  {
+    "video": "yttemporal/videos/RYjlvBxOTtw.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'the video starts with the howcast logo and title card introducing the topic: wing chun techniques: lap sau aka grabbing hand.'.",
+    "response": "<TIME_STAMP> the video starts with the howcast logo and title card introducing the topic: wing chun techniques: lap sau aka grabbing hand.",
+    "start": 0.0,
+    "end": 5.0,
+    "duration": 107.46
+  },
+  {
+    "video": "yttemporal/videos/hwvvzEn5N9M.mp4",
+    "query": "Give you a textual query: 'adding glitter glue for embellishment.' When does the described content occur in the video? Please return the timestamp in seconds.",
+    "response": "<TIME_STAMP> adding glitter glue for embellishment.",
+    "start": 108.0,
+    "end": 139.0,
+    "duration": 299.07
+  },
+  {
+    "video": "yttemporal/videos/Ef9X8LvtrKg.mp4",
+    "query": "Using the text query 'kyle adds pancake syrup and vanilla to the mixture.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> kyle adds pancake syrup and vanilla to the mixture.",
+    "start": 210.0,
+    "end": 240.0,
+    "duration": 404.54
+  },
+  {
+    "video": "yttemporal/videos/i5t_NsCLoTI.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'news anchor craig mckee introduces a breaking news story about a northern kentucky woman accused of promoting isis.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> news anchor craig mckee introduces a breaking news story about a northern kentucky woman accused of promoting isis.",
+    "start": 0.0,
+    "end": 6.0,
+    "duration": 27.38
+  },
+  {
+    "video": "yttemporal/videos/hlvmMeskmrQ.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'news anchors introduce the story about the chargers fans rallying for a new stadium.' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> news anchors introduce the story about the chargers fans rallying for a new stadium.",
+    "start": 10.0,
+    "end": 22.0,
+    "duration": 127.32
+  },
+  {
+    "video": "yttemporal/videos/_Rr9G_r-Obs.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'applying tape to the back of the plate to prevent chipping during drilling.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> applying tape to the back of the plate to prevent chipping during drilling.",
+    "start": 37.0,
+    "end": 69.0,
+    "duration": 414.24
+  },
+  {
+    "video": "yttemporal/videos/X-bszp1KuFM.mp4",
+    "query": "Using the textual query 'khloe kardashian, tristan thompson, and stassie karanikolaou share photos and videos from their time on the islands.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> khloe kardashian, tristan thompson, and stassie karanikolaou share photos and videos from their time on the islands.",
+    "start": 188.0,
+    "end": 213.0,
+    "duration": 235.06
+  },
+  {
+    "video": "yttemporal/videos/gvb3EBACn7I.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'the fox news channel displays a holding screen with the text 'waiting for event to begin...' against a backdrop of an empty news studio.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> the fox news channel displays a holding screen with the text 'waiting for event to begin...' against a backdrop of an empty news studio.",
+    "start": 0.0,
+    "end": 13.0,
+    "duration": 769.35
+  },
+  {
+    "video": "yttemporal/videos/BbIUDUc9E7Q.mp4",
+    "query": "Based on the text query 'mention of jolie's previous statement about being victimized by weinstein in the late 1990s.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> mention of jolie's previous statement about being victimized by weinstein in the late 1990s.",
+    "start": 23.0,
+    "end": 33.0,
+    "duration": 63.58
+  },
+  {
+    "video": "yttemporal/videos/BW94g-556G8.mp4",
+    "query": "Inspect the video and recognize multiple activities, mentioning their onset and termination timestamps along with a short description.",
+    "response": "<TIME_STAMP> allie wakes up and finds diesel looking unwell.charles and allie discuss diesel's health and decide to take him to a dog bar.charles and allie pick up allie's engagement ring after getting it cleaned.charles gets a haircut and shaves his head.charles and allie arrive at the dog bar and diesel interacts with other dogs.charles and allie talk about how much diesel enjoys the dog bar and how he is recovering well.finley, charles and allie's other dog, arrives at the dog bar and greets them.allie shares an update on diesel's health and expresses her gratitude for the support of their viewers.allie describes a concerning incident with diesel and explains that the vet reassured her it was normal.charles and allie celebrate diesel's improving health with pizza
+    "video": "yttemporal/videos/68nJ2Huf1Rc.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'the video encourages viewers to share their thoughts in the comments and subscribe to the genial channel.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> the video encourages viewers to share their thoughts in the comments and subscrib
+    "query": "Examine the video and locate a number of events, stating their commencement and completion time rack appears in the frame, sniffing the air.the buck raises its head and looks around cautiously, scanning its surroundings.",
+    "start": 0.0,
+    "end": 10.0,
+    "duration": 287.37
+  },
+  {
+    "video": "yttemporal/videos/pc46ooGJ6yM.mp4",
+    "query": "Localize the visual content described by the given textual query 'the family drives to castle otttis.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> the family drives to castle otttis.",
+    "start": 46.0,
+    "end": 83.0,
+    "duration": 1191.51
+  },
+  {
+    "video": "yttemporal/videos/bg_5ZZjCo-Y.mp4",
+    "query": "Observe the video and detect several occurrences, noting down their beginning and end times accompanied by a concise description.",
+    "response": "<TIME_STAMP> the video starts with a title card inviting viewers to subscribe for more supernatural content.brenda kunneman begins sharing her testimony of jesus healing her father in a hospital room.she describes the scene where jesus, accompanied by two angels, approaches her father's bedside.kunneman describes jesus revealing the scars on his back, symbolizing the chastisement of our peace and our healing, referencing isaiah 53:4-5.kunneman shares how she broke down upon seeing jesus' scars and realizing the depth of his sacrifice, leading to her father's immediate improvement.sid roth expresses his admiration for kunneman's ability to inspire faith and action in people through her teachings.kunneman explains her analogy of the spirit of god to a river, referencing john 457-38, and suggesting that there are rivers of god's power for various needs, including healing, financial blessing, and emotional problems.kunneman encourages viewers struggling with emotional or mental imbalances, including schizophrenia, depression, and bipolar disorder, to believe in the power of god and receive healing in jesus' name.she emphasizes the availability of the supernatural power of god for healing and deliverance, urging viewers to receive it by faith.sid roth shares an anecdote of witnessing kunneman praying for a large crowd and observing the manifestation of god's healing power.kunneman reiterates the increase in supernatural activity, including protection from accidents, injuries, and potential dangers, and the importance of believing in god's power.she highlights the prophetic season of dreams, suggesting that god will provide answers, warnings, and guidance through dreams, and encourages viewers to seek god's interpretation of their dreams.kunneman suggests that even world leaders will turn to god for guidance due to the impactful dreams they will receive.",
+    "start": 0.0,
+    "end": 3.0,
+    "duration": 548.48
+  },
+  {
+    "video": "yttemporal/videos/eBT3jguAKdI.mp4",
+    "query": "Localize the visual content described by the given textual query 'the reporter mentions a rumor that ibarra attempted to bribe the police officers who arrested him.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> the reporter mentions a rumor that ibarra attempted to bribe the police officers who arrested him.",
+    "start": 145.0,
+    "end": 175.0,
+    "duration": 652.29
+  },
+  {
+    "video": "yttemporal/videos/Qm1nQlJla2M.mp4",
+    "query": "Localize the visual content described by the given textual query 'he expresses a desire to break free from the tough image and find peace, inspired by the freedom he observes in others.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> he expresses a desire to break free from the tough image and find peace, inspired by the freedom he observes in others.",
+    "start": 43.0,
+    "end": 60.0,
+    "duration": 78.39
+  },
+  {
+    "video": "yttemporal/videos/Y28bElgASTw.mp4",
+    "query": "Based on the text query 'the cadena tres television network logo animation is displayed.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> the cadena tres television network logo animation is displayed.",
+    "start": 5.0,
+    "end": 8.0,
+    "duration": 529.18
+  },
+  {
+    "video": "yttemporal/videos/zFxj-pFgv_M.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'calculation of final x-velocity using the first equation.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> calculation of final x-velocity using the first equation.",
+    "start": 15.0,
+    "end": 30.0,
+    "duration": 44.12
+  },
+  {
+    "video": "yttemporal/videos/ORL1d7GWoBc.mp4",
+    "query": "The given natural language query 'holly offers to help bo, and he reveals his ability to manipulate objects with his mind, suggesting it's not just a trick.' is semantically aligned with a video moment, please give the start time and end time of the video moment.",
+    "response": "<TIME_STAMP> holly offers to help bo, and he reveals his ability to manipulate objects with his mind, suggesting it's not just a trick.",
+    "start": 89.0,
+    "end": 122.0,
+    "duration": 131.77
+  },
+  {
+    "video": "yttemporal/videos/TBePlyDmi7k.mp4",
+    "query": "Using the textual query 'introduction with animated puzzle pieces forming the words 'we love puzzles'.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> introduction with animated puzzle pieces forming the words 'we love puzzles'.",
+    "start": 0.0,
+    "end": 18.0,
+    "duration": 515.39
+  },
+  {
+    "video": "yttemporal/videos/h9dg6Jh05nA.mp4",
+    "query": "Localize the visual content described by the given textual query 'news anchor provides information on red tide concentration levels based on the latest fwc report.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> news anchor provides information on red tide concentration levels based on the latest fwc report.",
+    "start": 15.0,
+    "end": 29.0,
+    "duration": 137.44
+  },
+  {
+    "video": "yttemporal/videos/3wklS2g5Ry0.mp4",
+    "query": "Give you a textual query: 'jenny explains the best way to store ice cream and demonstrates the proper scooping technique.' When does the described content occur in the video?",
+    "response": "<TIME_STAMP> jenny explains the best way to store ice cream and demonstrates the proper scooping technique.",
+    "start": 15.0,
+    "end": 36.0,
+    "duration": 222.91
+  },
+  {
+    "video": "yttemporal/videos/Hmhb2vmEnvA.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'comparison of the lifespan and bark characteristics of giant sequoias and coastal redwoods' within the video, including timestamps.",
+    "response": "<TIME_STAMP> comparison of the lifespan and bark characteristics of giant sequoias and coastal redwoods",
+    "start": 123.0,
+    "end": 144.0,
+    "duration": 349.09
+  },
+  {
+    "video": "yttemporal/videos/Uy1Hnknn27E.mp4",
+    "query": "Using the text query 'transition to the topic of beverage preferences and a study by northwestern university.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> transition to the topic of beverage preferences and a study by northwestern university.",
+    "start": 48.0,
+    "end": 73.0,
+    "duration": 151.23
+  },
+  {
+    "video": "yttemporal/videos/R3ign3HKtGo.mp4",
+    "query": "Match the given textual query 'scenes from the harbor, showcasing the maritime aspect of the city.' to a specific part of the video and provide the start and end timestamps.",
+    "response": "<TIME_STAMP> scenes from the harbor, showcasing the maritime aspect of the city.",
+    "start": 66.0,
+    "end": 71.0,
+    "duration": 405.98
+  },
+  {
+    "video": "yttemporal/videos/dz3Oiym-Tjc.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'he discusses his approach to facing challenging pitchers, acknowledging the difficulty but emphasizing the absence of 'easy' opponents.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> he discusses his approach to facing challenging pitchers, acknowledging the difficulty but emphasizing the absence of 'easy' opponents.",
+    "start": 93.0,
+    "end": 144.0,
+    "duration": 217.92
+  },
+  {
+    "video": "yttemporal/videos/4oFa6r4QgTo.mp4",
+    "query": "Using the text query 'dogen answers a question about understanding spoken japanese and jokes about the viewer being deaf.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> dogen answers a question about understanding spoken japanese and jokes about the viewer being deaf.",
+    "start": 95.0,
+    "end": 108.0,
+    "duration": 160.89
+  },
+  {
+    "video": "yttemporal/videos/r8rZ_6Wm9Ag.mp4",
+    "query": "Based on the text query 'conclusion of the news report.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> conclusion of the news report.",
+    "start": 119.0,
+    "end": 123.0,
+    "duration": 123.92
+  },
+  {
+    "video": "yttemporal/videos/dFvg-2pA5t8.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'the video explores the reasons why spiders engage in ballooning, such as searching for food, finding mates, or as a means of transportation.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> the video explores the reasons why spiders engage in ballooning, such as searching for food, finding mates, or as a means of transportation.",
+    "start": 168.0,
+    "end": 195.0,
+    "duration": 365.62
+  },
+  {
+    "video": "yttemporal/videos/i1kVt1_jKAk.mp4",
+    "query": "Analyze the video and pinpoint multiple events, mentioning their starting and ending times as well as a summary of each event.",
+    "response": "<TIME_STAMP> the video starts with the man introducing his apartment tour with a sarcastic welcome.he shows a small laundry room with a washing machine and dryer, pointing out the new lamps.the man enters the bedroom and shows his clothes rack, closet, and bed with funny pillows, mentioning his roommate's cleaning responsibilities.he points out new additions to the bedroom, including a shelf, mirror, lamps, and a ventilator, while playfully arguing with his roommate.the man showcases an epilepsy bracelet and explains its function, leading to more playful banter with his roommate.they move to the hallway, where the man highlights the coat rack and shoe shelves, then transitions to the terrace to show the new seating area and sunshade.the man emphasizes the importance of a clean terrace and jokingly mentions gifting the old chairs to his roommate's ex.they enter the guest room, where the man shows the bed, alarm clock, and nightstand,  humorously implying the room's alternative use for 'activities' with his roommate.the tour continues to the hallway, showcasing a custom-made picture featuring the man, his dog, and his roommate, along with other photos from their lives.the man briefly shows the bathroom and mentions using the second bathroom as storage before entering the livestream room.he highlights the professional lighting setup and jokingly mentions the 'heat' it generates, then shows a jersey and photos on the wall.the tour moves to the kitchen, where the man expresses satisfaction with the setup, including the bar stool, cooking island, coffee machine, and a foot-operated trash can, while humorously mentioning his roommate's ex-girlfriend.the man shows a glass door leading to the dining area and kitchen, highlighting new chairs and a coffee table, with playful exchanges about his roommate's weight and cleaning habits.he points out various kitchen items and appliances, including a gift from his father, a collection of hard rock cafe glasses, an epilepsy bracelet, and a coffee machine, along with humorous remarks about his roommate and his ex-girlfriend.the man showcases a cup gifted by his roommate's ex and mentions the terrace being used for cooking videos in the future. the tour concludes with a final playful interaction between the roommates.",
+    "start": 0.0,
+    "end": 10.0,
+    "duration": 836.82
+  },
+  {
+    "video": "yttemporal/videos/INbuVXk_zY4.mp4",
+    "query": "Based on the text query 'the video cuts to footage of a large crowd gathered in a public square.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> the video cuts to footage of a large crowd gathered in a public square.",
+    "start": 30.0,
+    "end": 40.0,
+    "duration": 34.46
+  },
+  {
+    "video": "yttemporal/videos/BS9wRZUqZ3c.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'news anchor introduces a story about embezzlement at a local boys and girls club.' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> news anchor introduces a story about embezzlement at a local boys and girls club.",
+    "start": 0.0,
+    "end": 15.0,
+    "duration": 24.17
+  },
+  {
+    "video": "yttemporal/videos/4Ipx_jbOZc0.mp4",
+    "query": "The given natural language query 'transition to mazi speaking directly to the camera.' is semantically aligned with a video moment, please give the start time and end time of the video moment.",
+    "response": "<TIME_STAMP> transition to mazi speaking directly to the camera.",
+    "start": 9.0,
+    "end": 34.0,
+    "duration": 529.97
+  },
+  {
+    "video": "yttemporal/videos/Asp970drsUc.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'a panda juggles a volleyball while a penguin balances on a striped ball.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> a panda juggles a volleyball while a penguin balances on a striped ball.",
+    "start": 2.0,
+    "end": 3.0,
+    "duration": 74.21
+  },
+  {
+    "video": "yttemporal/videos/DBuuj0LDET0.mp4",
+    "query": "Give you a textual query: 'the mechanics discuss putting the seat back on the motorcycle and covering it up for storage.' When does the described content occur in the video? Please return the timestamp in seconds.",
+    "response": "<TIME_STAMP> the mechanics discuss putting the seat back on the motorcycle and covering it up for storage.",
+    "start": 49.0,
+    "end": 58.0,
+    "duration": 58.96
+  },
+  {
+    "video": "yttemporal/videos/2SFRpn91Lak.mp4",
+    "query": "The given natural language query 'the owner arrives at the drag strip but it's closed due to the rain.' is semantically aligned with a video moment, please give the start time and end time of the video moment.",
+    "response": "<TIME_STAMP> the owner arrives at the drag strip but it's closed due to the rain.",
+    "start": 409.0,
+    "end": 450.0,
+    "duration": 948.35
+  },
+  {
+    "video": "yttemporal/videos/ZsmtODbknb4.mp4",
+    "query": "Match the given textual query 'the weatherman discusses the severe weather outlook for thursday, friday, and saturday, highlighting areas with potential threats.' to a specific part of the video and provide the start and end timestamps.",
+    "response": "<TIME_STAMP> the weatherman discusses the severe weather outlook for thursday, friday, and saturday, highlighting areas with potential threats.",
+    "start": 84.0,
+    "end": 130.0,
+    "duration": 94.97
+  },
+  {
+    "video": "yttemporal/videos/2gZ5UFVNuiE.mp4",
+    "query": "The given natural language query 'a man introduces himself and the products he is going to review: daniel smith extra fine watercolor sticks.' is semantically aligned with a video moment, please give the start time and end time of the video moment.",
+    "response": "<TIME_STAMP> a man introduces himself and the products he is going to review: daniel smith extra fine watercolor sticks.",
+    "start": 0.0,
+    "end": 6.0,
+    "duration": 839.61
+  },
+  {
+    "video": "yttemporal/videos/2X4zJieTIg4.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'interview with karen jaeger about the upcoming osseo book club event featuring author kevin kling and his book '.",
+    "response": "<TIME_STAMP> interview with karen jaeger about the upcoming osseo book club event featuring author kevin kling and his book",
+    "start": 104.0,
+    "end": 140.0,
+    "duration": 140.5
+  },
+  {
+    "video": "yttemporal/videos/-s6bigcLkcM.mp4",
+    "query": "Give you a textual query: 'attaching folded dollar bills to the jewelry wire to form the lei.' When does the described content occur in the video?",
+    "response": "<TIME_STAMP> attaching folded dollar bills to the jewelry wire to form the lei.",
+    "start": 93.0,
+    "end": 179.0,
+    "duration": 442.67
+  },
+  {
+    "video": "yttemporal/videos/VTu88Bl3wUY.mp4",
+    "query": "Based on the text query 'introduction of sol's jewelry & loan and their 'bling it on' segment.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> introduction of sol's jewelry & loan and their 'bling it on' segment.",
+    "start": 0.0,
+    "end": 11.0,
+    "duration": 393.16
+  },
+  {
+    "video": "yttemporal/videos/3GI2KKNOXTI.mp4",
+    "query": "Localize the visual content described by the given textual query 'a young woman sings a song in the backseat of a car while driving through a tunnel.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> a young woman sings a song in the backseat of a car while driving through a tunnel.",
+    "start": 17.0,
+    "end": 48.0,
+    "duration": 179.35
+  },
+  {
+    "video": "yttemporal/videos/fVT1wN7iKbk.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'a fourth cat, a fluffy tabby, joins the group and sits near the chihuahua, rosie.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> a fourth cat, a fluffy tabby, joins the group and sits near the chihuahua, rosie.",
+    "start": 33.0,
+    "end": 55.0,
+    "duration": 75.05
+  },
+  {
+    "video": "yttemporal/videos/hr6NKZvExiU.mp4",
+    "query": "Based on the text query 'the chair intervenes to restore order as both senator wong and minister cormann speak over each other.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> the chair intervenes to restore order as both senator wong and minister cormann speak over each other.",
+    "start": 120.0,
+    "end": 150.0,
+    "duration": 171.76
+  },
+  {
+    "video": "yttemporal/videos/TrG-2KS6KqA.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'discussion of the game of the week: north college hill vs. chca, emphasizing the significance of the matchup and the strong defensive performances of both teams.'.",
+    "response": "<TIME_STAMP> discussion of the game of the week: north college hill vs. chca, emphasizing the significance of the matchup and the strong defensive performances of both teams.",
+    "start": 295.0,
+    "end": 447.0,
+    "duration": 455.37
+  },
+  {
+    "video": "yttemporal/videos/VSeHv106AeA.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'a man gets a blonde wig put on him by a friend to make his ex-girlfriend jealous.' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> a man gets a blonde wig put on him by a friend to make his ex-girlfriend jealous.",
+    "start": 91.0,
+    "end": 129.0,
+    "duration": 783.26
+  },
+  {
+    "video": "yttemporal/videos/CyzGzn7hMjk.mp4",
+    "query": "The given natural language query 'he butters the toast while stirring the beans occasionally.' is semantically aligned with a video moment, please give the start time and end time of the video moment.",
+    "response": "<TIME_STAMP> he butters the toast while stirring the beans occasionally.",
+    "start": 253.0,
+    "end": 466.0,
+    "duration": 695.0
+  },
+  {
+    "video": "yttemporal/videos/LdwSragVih8.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'the news anchors introduce the segment and mention flag day.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> the news anchors introduce the segment and mention flag day.",
+    "start": 0.0,
+    "end": 25.0,
+    "duration": 223.93
+  },
+  {
+    "video": "yttemporal/videos/TGmG0JaOLfk.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'books representing laws and regulations, symbolizing the legal basis of the judge's ruling.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> books representing laws and regulations, symbolizing the legal basis of the judge's ruling.",
+    "start": 60.0,
+    "end": 70.0,
+    "duration": 79.92
+  },
+  {
+    "video": "yttemporal/videos/FZrtiKFH2PU.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'call to action for viewers to share their experiences and subscribe.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> call to action for viewers to share their experiences and subscribe.",
+    "start": 155.0,
+    "end": 170.0,
+    "duration": 333.88
+  },
+  {
+    "video": "yttemporal/videos/ebA3NL-6iZI.mp4",
+    "query": "Match the given textual query 'an intro with text overlay ' to a specific part of the video and provide the start and end timestamps.",
+    "response": "<TIME_STAMP> an intro with text overlay",
+    "start": 0.0,
+    "end": 6.0,
+    "duration": 284.79
+  },
+  {
+    "video": "yttemporal/videos/JxHbgGdvNkU.mp4",
+    "query": "Using the textual query 'she talks about her skincare routine and expresses tiredness.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> she talks about her skincare routine and expresses tiredness.",
+    "start": 489.0,
+    "end": 549.0,
+    "duration": 549.8
+  },
+  {
+    "video": "yttemporal/videos/RcH8y2iANu0.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'introduction and team introductions.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> introduction and team introductions.",
+    "start": 0.0,
+    "end": 139.0,
+    "duration": 706.91
+  },
+  {
+    "video": "yttemporal/videos/7Eu4V0ij8CM.mp4",
+    "query": "Using the text query 'the show moves to the adoptable pets segment with ivan nava introducing two labrador retriever puppies, tiana and manchas, who are looking for their forever homes.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> the show moves to the adoptable pets segment with ivan nava introducing two labrador retriever puppies, tiana and manchas, who are looking for their forever homes.",
+    "start": 428.0,
+    "end": 569.0,
+    "duration": 786.55
+  },
+  {
+    "video": "yttemporal/videos/ZFGL3MKWahU.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'the news anchor provides details of the theft, mentioning the stolen items and the origin of the victims.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> the news anchor provides details of the theft, mentioning the stolen items and the origin of the victims.",
+    "start": 23.0,
+    "end": 46.0,
+    "duration": 154.9
+  },
+  {
+    "video": "yttemporal/videos/-Bb2ELxmv9A.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'trader matt cheslock discusses the lack of buying opportunities and the prevalence of selling, attributing it to factors like rising treasury yields and disappointing earnings reports.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> trader matt cheslock discusses the lack of buying opportunities and the prevalence of selling, attributing it to factors like rising treasury yields and disappointing earnings reports.",
+    "start": 24.0,
+    "end": 55.0,
+    "duration": 161.31
+  },
+  {
+    "video": "yttemporal/videos/UI4jJNriZK0.mp4",
+    "query": "Localize the visual content described by the given textual query 'intro with title card and dramatic visuals of various high school athletes.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> intro with title card and dramatic visuals of various high school athletes.",
+    "start": 0.0,
+    "end": 7.0,
+    "duration": 187.25
+  },
+  {
+    "video": "yttemporal/videos/I5SmWZcZnWw.mp4",
+    "query": "Using the text query 'reporter larry davis concludes the segment, summarizing the situation and highlighting the upcoming vote on the levy.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> reporter larry davis concludes the segment, summarizing the situation and highlighting the upcoming vote on the levy.",
+    "start": 144.0,
+    "end": 154.8,
+    "duration": 178.45
+  },
+  {
+    "video": "yttemporal/videos/djtDct8IWww.mp4",
+    "query": "Using the textual query 'the hairstylist continues blow drying, focusing on the roots and mid-lengths for lift and body.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> the hairstylist continues blow drying, focusing on the roots and mid-lengths for lift and body.",
+    "start": 25.0,
+    "end": 45.0,
+    "duration": 276.25
+  },
+  {
+    "video": "yttemporal/videos/OhsBtRwmTTI.mp4",
+    "query": "Using the textual query 'the video highlights the shared opposition to the tpp by both clinton and trump, despite their differing political stances, and mentions obama's support for the agreement.', locate the relevant video segment and mention the start and end times in seconds.",
+    "response": "<TIME_STAMP> the video highlights the shared opposition to the tpp by both clinton and trump, despite their differing political stances, and mentions obama's support for the agreement.",
+    "start": 48.0,
+    "end": 114.0,
+    "duration": 98.94
+  },
+  {
+    "video": "yttemporal/videos/AbpufID0InY.mp4",
+    "query": "Analyze the video and pinpoint multiple events, mentioning their starting and ending times as well as a summary of each event.",
+    "response": "<TIME_STAMP> introduction of the speaker and the dji mavic air drone.comparison of the mavic air's size with the spark and mavic pro, emphasizing its compact form factor despite having non-foldable arms.showcase of the newly designed controller with screw-in joysticks for a more compact and travel-friendly design.the speaker expresses his excitement and the need to purchase the new drone.comparison of the mavic air's camera system with the mavic pro, highlighting its wider field of view, increased bitrate, and improved focus tracking.discussion of the mavic air's advanced flight modes and 32mp panorama mode.highlighting the mavic air's 8gb onboard memory and improved obstacle avoidance system.the speaker considers selling his phantom 3 professional 4k drone to purchase the mavic air.comparison of the mavic air's specifications with the mavic pro and phantom 4 pro, including flight time, video transmission latency, and maximum video resolution in live view and 4k recording.",
+    "start": 0.0,
+    "end": 19.0,
+    "duration": 990.42
+  },
+  {
+    "video": "yttemporal/videos/8NYSROoHDoA.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'a vineyard owner in ramona, california, shows grapes damaged by mildew.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> a vineyard owner in ramona, california, shows grapes damaged by mildew.",
+    "start": 14.0,
+    "end": 28.0,
+    "duration": 105.86
+  },
+  {
+    "video": "yttemporal/videos/QnQuXw-3ZJc.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'discussion of a case in guinea where an 11-year-old girl gave birth, highlighting the unknown identity of the father and the girl's challenging situation.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> discussion of a case in guinea where an 11-year-old girl gave birth, highlighting the unknown identity of the father and the girl's challenging situation.",
+    "start": 61.0,
+    "end": 113.0,
+    "duration": 402.77
+  },
+  {
+    "video": "yttemporal/videos/JDeH97bSZ8A.mp4",
+    "query": "Based on the text query 'introduction of chef kenny bowers and the bubbie's potato cakes recipe.', determine the appropriate video moment and share the start and end times in seconds.",
+    "response": "<TIME_STAMP> introduction of chef kenny bowers and the bubbie's potato cakes recipe.",
+    "start": 0.0,
+    "end": 18.0,
+    "duration": 230.85
+  },
+  {
+    "video": "yttemporal/videos/E3cHl9gLifY.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'discussion about detroit's thriving design community and its unesco city of design designation.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> discussion about detroit's thriving design community and its unesco city of design designation.",
+    "start": 109.0,
+    "end": 149.0,
+    "duration": 206.96
+  },
+  {
+    "video": "yttemporal/videos/GL5A4J4r5yw.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'the father finds an empty package where a river scott die-cast car used to be.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> the father finds an empty package where a river scott die-cast car used to be.",
+    "start": 40.0,
+    "end": 53.0,
+    "duration": 423.74
+  },
+  {
+    "video": "yttemporal/videos/40oi5vLwbDc.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'the man in the blue shirt shakes hands and hugs people in a green shirt' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> the man in the blue shirt shakes hands and hugs people in a green shirt",
+    "start": 17.0,
+    "end": 33.0,
+    "duration": 189.87
+  },
+  {
+    "video": "yttemporal/videos/ir_95o-A1Q0.mp4",
+    "query": "Study the video and spot several events, providing their starting and concluding times as well as a summary of each occurrence.",
+    "response": "<TIME_STAMP> professor robson introduces the date april 27th as the anniversary of the muslim invasion of spain in 711 ad under tariq ibn ziyad.he mentions the conquest of spain and the near-conquest of france, which was prevented by charles martel at the battle of tours.robson questions the legitimacy of muslim claims to spain and highlights the christian reconquista completed in 1492.he draws a parallel with the crusades and criticizes the one-sided view of history where muslim conquests are often overlooked or justified, while christian counter-offensives are condemned.robson mentions a saudi sheikh's statement about 'weeping over andalusia' and emphasizes the need for a balanced historical perspective that acknowledges the presence of a jewish kingdom in the region before islam.he concludes by advocating for forgiveness and understanding between different groups with varying worldviews to achieve peace and avoid future conflicts.",
+    "start": 9.0,
+    "end": 29.0,
+    "duration": 274.85
+  },
+  {
+    "video": "yttemporal/videos/4wgUyPkjx-E.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'summary of key points and call to action for viewers to subscribe and like the video.'.",
+    "response": "<TIME_STAMP> summary of key points and call to action for viewers to subscribe and like the video.",
+    "start": 501.0,
+    "end": 569.0,
+    "duration": 596.38
+  },
+  {
+    "video": "yttemporal/videos/5iVS6atCIOM.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'gleib argues for mixing white-collar and blue-collar prisoners and criticizes the leniency of the justice system towards corporate criminals.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> gleib argues for mixing white-collar and blue-collar prisoners and criticizes the leniency of the justice system towards corporate criminals.",
+    "start": 30.0,
+    "end": 100.0,
+    "duration": 927.2
+  },
+  {
+    "video": "yttemporal/videos/Erf0DsJZSs8.mp4",
+    "query": "Using the text query 'the news anchor explains the details of the alleged assault, stating it occurred at a norman restaurant.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> the news anchor explains the details of the alleged assault, stating it occurred at a norman restaurant.",
+    "start": 20.0,
+    "end": 30.0,
+    "duration": 22.27
+  },
+  {
+    "video": "yttemporal/videos/6aVB6CuroDM.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'ron brant, the men's national team coordinator, highlights the team's resilience and determination. ' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> ron brant, the men's national team coordinator, highlights the team's resilience and determination.",
+    "start": 223.0,
+    "end": 249.0,
+    "duration": 384.43
+  },
+  {
+    "video": "yttemporal/videos/adWiYtlFIcM.mp4",
+    "query": "Match the given textual query 'kazama morio, who plays the lead role of seiichiro kadowaki, expresses his gratitude to the audience for attending the premiere.' to a specific part of the video and provide the start and end timestamps.",
+    "response": "<TIME_STAMP> kazama morio, who plays the lead role of seiichiro kadowaki, expresses his gratitude to the audience for attending the premiere.",
+    "start": 11.0,
+    "end": 52.0,
+    "duration": 491.45
+  },
+  {
+    "video": "yttemporal/videos/w7zZn1LVS9w.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'witchay babay interacts with maria and asks her to take pictures of him.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> witchay babay interacts with maria and asks her to take pictures of him.",
+    "start": 41.0,
+    "end": 56.0,
+    "duration": 673.56
+  },
+  {
+    "video": "yttemporal/videos/-vUuedQed-k.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'the host talks about the car's expected arrival in australia and encourages viewers to visit caradvice.com for more information.' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> the host talks about the car's expected arrival in australia and encourages viewers to visit caradvice.com for more information.",
+    "start": 50.0,
+    "end": 56.0,
+    "duration": 56.24
+  },
+  {
+    "video": "yttemporal/videos/ZaXmkoE_wgc.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'painting the paper plate blue using a makeup sponge.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> painting the paper plate blue using a makeup sponge.",
+    "start": 76.0,
+    "end": 90.0,
+    "duration": 197.74
+  },
+  {
+    "video": "yttemporal/videos/36-3YHVRTfk.mp4",
+    "query": "Give you a textual query: 'number 6: borderlands 3 character trailers introducing new vault hunters and their abilities.' When does the described content occur in the video? Please return the timestamp in seconds.",
+    "response": "<TIME_STAMP> number 6: borderlands 3 character trailers introducing new vault hunters and their abilities.",
+    "start": 256.0,
+    "end": 311.0,
+    "duration": 673.38
+  },
+  {
+    "video": "yttemporal/videos/2aRSAxBbWLE.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'the news anchor provides an update on the investigation and mentions simmons' teammate's recovery.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> the news anchor provides an update on the investigation and mentions simmons' teammate's recovery.",
+    "start": 111.0,
+    "end": 123.0,
+    "duration": 138.18
+  },
+  {
+    "video": "yttemporal/videos/RXyrF_G0XII.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'he talks about aadhaar, jan dhan accounts, apmcs, and enams as examples of positive changes in india.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> he talks about aadhaar, jan dhan accounts, apmcs, and enams as examples of positive changes in india.",
+    "start": 315.0,
+    "end": 373.0,
+    "duration": 1123.8
+  },
+  {
+    "video": "yttemporal/videos/7EPwVbax7FM.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'wet sanding the headlight with 20 grit sandpaper to further refine the surface and prepare it for polishing.'.",
+    "response": "<TIME_STAMP> wet sanding the headlight with 20 grit sandpaper to further refine the surface and prepare it for polishing.",
+    "start": 94.0,
+    "end": 130.0,
+    "duration": 293.85
+  },
+  {
+    "video": "yttemporal/videos/CgLk4LoNmIQ.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'demonstration of basic adjustments in lightroom, including exposure, highlights, shadows, white balance, and cropping.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> demonstration of basic adjustments in lightroom, including exposure, highlights, shadows, white balance, and cropping.",
+    "start": 150.0,
+    "end": 245.0,
+    "duration": 1145.42
+  },
+  {
+    "video": "yttemporal/videos/6GJM8JKvP1E.mp4",
+    "query": "Give you a textual query: 'the ear cleaners examine ben's ears and find ear stones.' When does the described content occur in the video?",
+    "response": "<TIME_STAMP> the ear cleaners examine ben's ears and find ear stones.",
+    "start": 30.0,
+    "end": 60.0,
+    "duration": 188.22
+  },
+  {
+    "video": "yttemporal/videos/T8Q8mZ1P68A.mp4",
+    "query": "Find the video segment that corresponds to the given textual query 'discussion of the removal of lethal weapon movies.' and determine its start and end seconds.",
+    "response": "<TIME_STAMP> discussion of the removal of lethal weapon movies.",
+    "start": 78.0,
+    "end": 103.0,
+    "duration": 199.71
+  },
+  {
+    "video": "yttemporal/videos/cCl0Ua2_itc.mp4",
+    "query": "Give you a textual query: 'discussion of the false equivalence fallacy and its two main forms: giving credence to weak arguments and making false comparisons.' When does the described content occur in the video?",
+    "response": "<TIME_STAMP> discussion of the false equivalence fallacy and its two main forms: giving credence to weak arguments and making false comparisons.",
+    "start": 462.0,
+    "end": 506.0,
+    "duration": 732.84
+  },
+  {
+    "video": "yttemporal/videos/ADgwn5RONyE.mp4",
+    "query": "Analyze the video and pinpoint multiple events, mentioning their starting and ending times as well as a summary of each event.",
+    "response": "<TIME_STAMP> intro with the my froggy stuff logo and upbeat music.introduction of the wonder woman doll from the dc superhero girls collection.close-up examination of the doll's packaging, showcasing the clear plastic window and character information on the back.detailed reading and dramatic interpretation of wonder woman's character background, including her origin, personality, powers, and accessories.removing the doll from the packaging.analyzing the doll's physical features, such as her hairstyle, outfit, and articulation points.demonstrating the removable hands and bracelets of the doll.comparing the wonder woman doll's size and body type to a standard barbie doll.discussing the possibility of the wonder woman doll wearing barbie clothes and suggesting suitable outfit options.outro with the my froggy stuff outro and music, encouraging viewers to subscribe and create something fabulous.",
+    "start": 0.0,
+    "end": 6.0,
+    "duration": 305.95
+  },
+  {
+    "video": "yttemporal/videos/C06rWhXFyyw.mp4",
+    "query": "Using the text query 'the news anchor concludes the segment by mentioning the ongoing inter american press association's general assembly and the next meeting scheduled for 2018 in medellin, colombia.', find the relevant part of the video and indicate its start and end times.",
+    "response": "<TIME_STAMP> the news anchor concludes the segment by mentioning the ongoing inter american press association's general assembly and the next meeting scheduled for 2018 in medellin, colombia.",
+    "start": 137.0,
+    "end": 152.0,
+    "duration": 152.6
+  },
+  {
+    "video": "yttemporal/videos/L68F3Dr5r3Q.mp4",
+    "query": "Locate and describe the visual content mentioned in the text query 'the news anchors introduce dr. gisela dachs, an expert from the hebrew university in jerusalem, and transition to washington d.c. to speak with dan arbell from the brookings institution.' within the video, including timestamps.",
+    "response": "<TIME_STAMP> the news anchors introduce dr. gisela dachs, an expert from the hebrew university in jerusalem, and transition to washington d.c. to speak with dan arbell from the brookings institution.",
+    "start": 82.0,
+    "end": 99.0,
+    "duration": 502.85
+  },
+  {
+    "video": "yttemporal/videos/TK4GwAVgtmI.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'a motorcyclist rides on a highway and encounters a car that abruptly cuts him off without signaling, leading to a near collision.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> a motorcyclist rides on a highway and encounters a car that abruptly cuts him off without signaling, leading to a near collision.",
+    "start": 475.0,
+    "end": 555.0,
+    "duration": 612.03
+  },
+  {
+    "video": "yttemporal/videos/-wadM3WEA9g.mp4",
+    "query": "Observe the video and detect several occurrences, noting down their beginning and end times accompanied by a concise description.",
+    "response": "<TIME_STAMP> introduction to the eastern conference finals game 4 between the cleveland cavaliers and the toronto raptors, with cleveland leading the series 2-1.the raptors' strong start, showcasing their offensive prowess and the energetic crowd.the cavaliers respond with baskets from lebron james and kyrie irving, narrowing the raptors' lead.the raptors maintain their lead with kyle lowry's exceptional shooting, including long-range three-pointers.first-half stats highlight the raptors' dominance, with a 16-point advantage.the cavaliers attempt a comeback in the third and fourth quarters with improved shooting.the raptors maintain their lead and secure a victory, tying the series at 2-2.the video concludes with the final score and the anticipation for game 5 in cleveland.",
+    "start": 0.0,
+    "end": 19.0,
+    "duration": 353.27
+  },
+  {
+    "video": "yttemporal/videos/lmCEWRatH-0.mp4",
+    "query": "Analyze the video and pinpoint multiple events, mentioning their starting and ending times as well as a summary of each event.",
+    "response": "<TIME_STAMP> chas enters the room and takes off her jacket, looking weary.aaron asks chas if she's okay, to which she responds with a smile and expresses feeling cleansed after clearing out their old house.chas describes feeling like a weight has been lifted and that she can finally move on from the past pain.aaron questions her about her feelings and she explains holding onto the pain as a way to remember his father.chas expresses her love for aaron and her desire to focus on the future with him and their family.chas exits the room, leaving aaron with a thoughtful expression.",
+    "start": 3.0,
+    "end": 9.0,
+    "duration": 106.09
+  },
+  {
+    "video": "yttemporal/videos/APRZDgyO46E.mp4",
+    "query": "Analyze the video and pinpoint multiple events, mentioning their starting and ending times as well as a summary of each event.",
+    "response": "<TIME_STAMP> introduction about the problem of ink cartridges drying out.explanation of how ink dries in the printhead and clogs nozzles.demonstration of ineffective methods like plastic film and tape.instruction to clean the printhead with a damp cloth.preparation of a damp paper towel.placing the cartridge with a damp paper towel in a plastic bag.storing the bag in the refrigerator.explanation of how low temperatures prevent drying.weekly check and re-dampening of the paper towel.checking the cartridge contact terminals before re-inserting.re-inserting the cartridge and printing test pages.mentioning potential low initial print quality and cleaning procedures.alternative method of storing in a sealed bag in a cool, dark place.",
+    "start": 0.0,
+    "end": 5.0,
+    "duration": 222.98
+  },
+  {
+    "video": "yttemporal/videos/M52tsk9PS90.mp4",
+    "query": "Pinpoint the video section that corresponds to the given text query 'news anchor introduces a story about a hit-and-run incident in bakersfield.' and specify its starting and ending timestamps.",
+    "response": "<TIME_STAMP> news anchor introduces a story about a hit-and-run incident in bakersfield.",
+    "start": 0.0,
+    "end": 19.0,
+    "duration": 135.72
+  },
+  {
+    "video": "yttemporal/videos/KXXQ_pRou1w.mp4",
+    "query": "Localize the visual content described by the given textual query 'she removes the pins as she sews to prevent any accidents.' in the video, and output the start and end timestamps in seconds.",
+    "response": "<TIME_STAMP> she removes the pins as she sews to prevent any accidents.",
+    "start": 129.0,
+    "end": 144.0,
+    "duration": 372.96
+  },
+  {
+    "video": "yttemporal/videos/_zP5afnBnjo.mp4",
+    "query": "Detect the video portion that aligns with the provided text query 'explanation of the british government's proposal to change the term \"pregnant woman\" to \"pregnant people\" in a un treaty and the resulting outrage from feminists.' and return its starting and ending time in seconds.",
+    "response": "<TIME_STAMP> explanation of the british government's proposal to change the term \"pregnant woman\" to \"pregnant people\" in a un treaty and the resulting outrage from feminists.",
+    "start": 8.0,
+    "end": 23.0,
+    "duration": 283.17
+  },
+  {
+    "video": "yttemporal/videos/4IExnz5rM3M.mp4",
+    "query": "Identify the video portion that relates to the provided text query 'world's largest aircraft, the stratolaunch nears completion for air-launching rockets' and provide the starting and ending timestamps in seconds.",
+    "response": "<TIME_STAMP> world's largest aircraft, the stratolaunch nears completion for air-launching rockets",
+    "start": 421.0,
+    "end": 506.0,
+    "duration": 839.68
+  },
+  {
+    "video": "yttemporal/videos/kLb7Fn1BIxc.mp4",
+    "query": "Detect and report the start and end timestamps of the video segment that semantically matches the given textual query 'the google logo is displayed on a brick wall, signifying the collaboration between google and grupo planeta.'.",
+    "response": "<TIME_STAMP> the google logo is displayed on a brick wall, signifying the collaboration between google and grupo planeta.",
+    "start": 1.0,
+    "end": 11.0,
+    "duration": 77.53
+  }
+]

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Envs
+.venv/  venv/  env/
+
+# Checkpoints / weights
+*.pt  *.pth  *.bin  *.safetensors
+checkpoints/  outputs/  runs/  wandb/
+
+# Large data (regenerate via data/convert_*.py or download)
+*.jsonl
+data/*.mp4  data/raw/  data/processed/
+data/imgs.txt
+
+# Cluster logs
+*.out  *.err  *.log  slurm-*.out
+
+# IDE / OS
+.idea/  .vscode/  *.iml  .DS_Store  desktop.ini
+
+# Credentials (never commit)
+*cookie*  *.key  *.pem  .env

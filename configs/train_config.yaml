@@ -1,0 +1,110 @@
+# SmolVLM-DisTime Training Configuration
+# ============================================================
+# Based on DisTime paper Appendix A training parameters
+# Adapted for SmolVLM2-2.2B
+# ============================================================
+
+# Model Configuration
+model_name_or_path: "HuggingFaceTB/SmolVLM2-2.2B-Instruct"
+torch_dtype: "bfloat16"
+
+# DisTime Module Configuration (from paper)
+reg_max: 32                    # Optimal value from ablation study
+num_time_layers: 3             # Optimal value from ablation study
+time_loss_weight: 1.0          # λ_dist
+iou_loss_weight: 1.0           # λ_iou
+
+# LoRA Configuration (from paper: LLaVA-OV-7B settings)
+use_lora: true
+lora_r: 64                     # LoRA rank
+lora_alpha: 16                 # LoRA alpha
+lora_dropout: 0.05
+lora_target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+# Freezing
+freeze_vision_tower: true      # Always freeze vision encoder
+freeze_llm: false              # Fine-tune LLM with LoRA
+gradient_checkpointing: true
+
+# Data Configuration
+data_path: "/path/to/train_data.json"
+eval_data_path: null
+video_folder: "/path/to/videos"
+max_frames: 16                 # Frames per video
+fps: 1.0                       # Sample at 1 FPS
+model_max_length: 4096
+dataloader_num_workers: 4
+dataloader_drop_last: true
+
+# Training Configuration
+# Based on paper: 8×A100 GPUs, ~40-50 hours
+output_dir: "./checkpoints/smolvlm-distime"
+run_name: "smolvlm-distime-train"
+do_train: true
+do_eval: false
+
+# Batch size: effective batch = per_device * accumulation * num_gpus
+# Paper uses 16 for InternVL-1B, 512 for LLaVA-OV-7B
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4   # Effective batch = 4 * 4 * 8 = 128
+
+# Learning rate (from paper)
+learning_rate: 2.0e-5            # LLaVA-OV uses 2e-5
+time_module_lr: null             # Use same as learning_rate
+vision_tower_lr: null            # Vision tower is frozen
+
+# Schedule
+num_train_epochs: 1              # Paper trains for 1 epoch
+warmup_ratio: 0.03
+lr_scheduler_type: "cosine"
+weight_decay: 0.0
+
+# Precision
+bf16: true
+tf32: true
+max_grad_norm: 1.0
+
+# Logging
+logging_steps: 1
+report_to: "wandb"               # Options: wandb, tensorboard, none
+
+# Saving
+save_strategy: "steps"
+save_steps: 500
+save_total_limit: 3
+
+# DeepSpeed
+deepspeed: "configs/zero2.json"  # Use ZeRO-2 for 2.2B model
+
+# Misc
+seed: 42
+remove_unused_columns: false
+
+---
+# Debug Configuration (for quick testing)
+# Use with: python scripts/train.py configs/train_config_debug.yaml
+
+# model_name_or_path: "HuggingFaceTB/SmolVLM2-2.2B-Instruct"
+# reg_max: 16
+# num_time_layers: 2
+# use_lora: true
+# lora_r: 8
+# lora_alpha: 16
+# max_frames: 4
+# model_max_length: 1024
+# per_device_train_batch_size: 1
+# gradient_accumulation_steps: 1
+# max_steps: 50
+# learning_rate: 1.0e-4
+# warmup_steps: 5
+# logging_steps: 1
+# save_steps: 25
+# report_to: "none"
+# deepspeed: null
