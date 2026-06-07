@@ -166,7 +166,7 @@ def main():
             "QVHighlights highlight detection (mAP / HIT@1) is not applicable to the "
             "Text paradigm by design, and YouCook2 dense-captioning metrics "
             "(CIDEr / SODA_c / F1) require the dedicated scorer in evaluate_youcook2.py "
-            "applied to the parsed multi-event text output. See README 'Known gaps'."
+            "applied to the parsed multi-event text output."
         )
 
     model = load_text_model(args)

@@ -50,7 +50,7 @@ Minimal, code-only release (no datasets / weights / figures — see [Data](#data
 │   └── merge_and_export.py       # merge LoRA + export a deployable checkpoint
 └── eval/
     ├── evaluate_{charades,qvh,youcook2}.py   # Cont. paradigm
-    ├── evaluate_{charades,qvh}_trace.py      # Gen. paradigm (needs TRACE, see below)
+    ├── evaluate_{charades,qvh}_trace.py      # Gen. paradigm (needs external TRACE repo)
     ├── evaluate_text.py                      # Text paradigm (generation + regex parse)
     └── benchmarks/benchmark_efficiency.py    # params / latency / throughput / memory
 ```
@@ -67,7 +67,7 @@ export PYTHONPATH="$PWD:$PYTHONPATH"
 ## Installation
 
 ```bash
-conda create -n ecv2026 python=3.10 -y && conda activate ecv2026
+conda create -n tg python=3.10 -y && conda activate tg
 pip install -r requirements.txt
 # optional, faster training:
 pip install flash-attn --no-build-isolation
@@ -151,7 +151,7 @@ DeepSpeed ZeRO-2, bf16.
 - *Context length* (8→64 frames): vary `--max_frames`.
 - *Data efficiency* (25→100%): subset via per-source sampling weights in
   `data/dataset.py` (`build_datasets`); a one-flag `--data_fraction` driver is
-  not yet provided (see gaps below).
+  not yet provided.
 
 ---
 
@@ -165,7 +165,8 @@ python eval/evaluate_charades.py  --model_type smolvlm --checkpoint_dir <ckpt> -
 python eval/evaluate_qvh.py       ...
 python eval/evaluate_youcook2.py  ...
 
-# Gen. (TRACE) — needs the external TRACE package (see Known gaps)
+# Gen. (TRACE) — requires the external TRACE repo on PYTHONPATH:
+#   git clone https://github.com/gyxxyg/TRACE && export PYTHONPATH=$PWD/TRACE:$PYTHONPATH
 python eval/evaluate_charades_trace.py ...
 
 # Text numeral
@@ -177,58 +178,6 @@ python eval/benchmarks/benchmark_efficiency.py
 
 Metrics: Charades/QVH moment retrieval → R1@0.5, R1@0.7, mIoU; QVH highlight
 detection → mAP, HIT@1 (Gen. only); YouCook2 dense captioning → CIDEr, SODA_c, F1.
-
----
-
-## Code–paper alignment — known gaps
-
-Read this before reproducing the paper tables.
-
-1. **Text Numeral paradigm — IMPLEMENTED (was missing in the original code).**
-   Run with `--paradigm text`. Added components:
-   `data/dataset.py::_getitem_text` (targets formatted exactly as the paper
-   Appendix: *"The event happens from X to Y seconds."*, reusing the same frames /
-   prompt / label masking as the other paradigms; consumes the SAME data file as
-   DisTime); `models/{smolvlm,fastvlm,molmo2}_text.py` +
-   `models/text_paradigm_base.py` (base VLM + LoRA, standard next-token loss, no
-   extra modules); `scripts/train.py` text branch + `scripts/train_single_text.sh`;
-   `eval/evaluate_text.py` (generation + "from X to Y seconds" parsing, with the
-   exact Appendix inference prompts for Charades / QVHighlights / YouCook2).
-   - Format, prompts, loss and hyperparameters follow the paper Appendix exactly.
-   - **Validation status:** data-format and timestamp-parse logic are unit-tested
-     (the single-event target matches the Appendix verbatim; format↔parse is
-     round-trip consistent). Full training and `generate()` were NOT run here
-     (need GPUs, the multi-GB corpus, and real backbone weights). Molmo2 uses a
-     simple greedy decode loop (no KV cache) — validate/optimize on real weights.
-   - Exact reproduction of the paper's *Text* accuracy numbers is not guaranteed
-     (depends on the training run / seed / data), but the methodology matches.
-   - `eval/evaluate_text.py` covers **moment retrieval** (Charades-STA, QVH-MR):
-     R@1 / mIoU. It does NOT compute QVHighlights highlight detection (mAP/HIT@1
-     — not applicable to Text by design) nor YouCook2 dense-captioning metrics
-     (CIDEr/SODA_c/F1); for the latter, route the parsed multi-event text through
-     the scorer in `eval/evaluate_youcook2.py`. All three text `generate()`
-     implementations return generated-only tokens and use KV cache
-     (SmolVLM/FastVLM via HF `.generate`, Molmo2 via a cached manual loop that
-     mirrors `molmo2_distime.generate`).
-
-2. **TRACE (Gen.) baseline depends on the external TRACE codebase.**
-   `eval/evaluate_*_trace.py` import a top-level `trace` package
-   (`from trace.model.builder import ...`). Vendor it or document the dependency:
-   clone `https://github.com/gyxxyg/TRACE`, add to `PYTHONPATH`, pin the commit.
-
-3. **Qwen3-VL + TRACE files** (if you choose to include them) need the upstream
-   TRACE package layout (`..multimodal_encoder.builder`, `..constants`); they do
-   not resolve standalone.
-
-4. **Data efficiency ablation** has the mechanism (per-source sampling weights)
-   but no single `--data_fraction` flag/script — add one for clean reproduction.
-
-5. **Large training corpora and source videos are not included** — provide a
-   download script or external host (HF / cloud) and link them in the Data section.
-
-6. **Before publishing:** add a `LICENSE` (template provided), scrub
-   cluster-specific paths / accounts in `scripts/*.slurm` and `*.sh`, and add a
-   `CITATION.cff` / BibTeX entry.
 
 ---
 
