@@ -24,6 +24,8 @@ Backbones: **SmolVLM2 0.5B / 2.2B** (SigLIP), **FastVLM-1.5B** (FastViTHD),
 
 ## Repository layout
 
+Minimal, code-only release (no datasets / weights / figures — see [Data](#data)).
+
 ```
 .
 ├── README.md  requirements.txt  LICENSE  .gitignore
@@ -31,23 +33,26 @@ Backbones: **SmolVLM2 0.5B / 2.2B** (SigLIP), **FastVLM-1.5B** (FastViTHD),
 ├── models/
 │   ├── smolvlm_distime.py  fastvlm_distime.py  molmo2_distime.py   # Cont. paradigm
 │   ├── smolvlm_trace.py    fastvlm_trace.py    molmo2_trace.py     # Gen. paradigm
-│   ├── time_modules.py     trace_modules.py    manual_lora.py
-│   ├── molmo2/             # Molmo2 modeling/config/processors
-│   └── (tokenizer / processor / config json for the backbones)
+│   ├── smolvlm_text.py     fastvlm_text.py     molmo2_text.py      # Text paradigm
+│   ├── text_paradigm_base.py  time_modules.py  trace_modules.py  manual_lora.py  merge_lora.py
+│   └── molmo2/             # Molmo2 modeling / configuration / processors (code only)
 ├── data/
-│   ├── dataset.py          # LazySupervisedDataset, collate_fn, build_datasets
-│   ├── convert_internvid_to_trace.py  convert_trace_to_distime.py
-│   ├── filter_trace_data.py  analyze_dataset*.py
-│   └── distime_yttemporal_100.json    # tiny sample (full corpora not committed — see Data)
-├── utils/                  # args, losses, metrics, dist_utils, mm_utils  (all complete)
+│   ├── dataset.py          # LazySupervisedDataset, collate_fn, build_datasets (3 paradigms)
+│   ├── convert_internvid_to_trace.py  convert_trace_to_distime.py  filter_trace_data.py
+│   └── __init__.py
+├── utils/                  # args, losses, metrics, dist_utils, mm_utils
 ├── scripts/
-│   ├── train.py            # unified training entry point
-│   └── train_*.sh / *.slurm  # per-backbone / per-paradigm launchers (single & multi-node)
+│   ├── train.py                  # unified training entry point
+│   ├── train_single.sh           # example: DisTime (set --model_type for the backbone)
+│   ├── train_single_trace.sh     # example: TRACE
+│   ├── train_single_text.sh      # example: Text numeral
+│   ├── train_slurm_multinode.sh  # example: multi-node SLURM
+│   └── merge_and_export.py       # merge LoRA + export a deployable checkpoint
 └── eval/
-    ├── evaluate_{charades,qvh,youcook2}.py        # Cont. paradigm
-    ├── evaluate_{charades,qvh}_trace.py           # Gen. paradigm (needs TRACE, see below)
-    ├── benchmarks/         # efficiency profiling (params / latency / throughput / memory)
-    └── figures/            # plotting for scaling, Pareto, ablation, qualitative
+    ├── evaluate_{charades,qvh,youcook2}.py   # Cont. paradigm
+    ├── evaluate_{charades,qvh}_trace.py      # Gen. paradigm (needs TRACE, see below)
+    ├── evaluate_text.py                      # Text paradigm (generation + regex parse)
+    └── benchmarks/benchmark_efficiency.py    # params / latency / throughput / memory
 ```
 
 All entry points use **absolute imports from the repo root** (`from models…`,
@@ -72,51 +77,74 @@ pip install flash-attn --no-build-isolation
 
 ## Data
 
-The paper trains on ~1.2M temporally-annotated samples (~400K videos) from 11
-sources (InternVid, YTTemporal, Valley, DiDeMo, ShareGPT4Video, ViTT, TextVR,
-COIN, ActivityNet, QueryD, VideoChat). The combined corpus shares the same
-`(video, query, annotation)` triples; each paradigm formats them differently.
+**No datasets, annotations or videos are included** — this is a code-only
+release. Download the data from the official sources below and convert it with
+the scripts in `data/`.
 
-**The large pre-formatted corpora are NOT committed** (the originals
-`combined_distime_balanced.jsonl` ~582 MB and `combined_trace_balanced.jsonl`
-~993 MB are too big for git). Regenerate them with the converters, or host them
-externally and link here:
+### Training data
+
+The paper trains on ~1.2M temporally-annotated samples (~400K videos) from 11
+public sources. Get each from its official release:
+
+| Source | Where |
+|---|---|
+| InternVid | https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid |
+| YT-Temporal | https://rowanzellers.com/merlot/ |
+| Valley | https://github.com/RupertLuo/Valley |
+| DiDeMo | https://github.com/LisaAnne/TemporalLanguageRelease |
+| ShareGPT4Video | https://huggingface.co/datasets/ShareGPT4Video/ShareGPT4Video |
+| ViTT | https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT |
+| TextVR | https://github.com/callsys/TextVR |
+| COIN | https://coin-dataset.github.io/ |
+| ActivityNet Captions | https://cs.stanford.edu/people/ranjaykrishna/densevid/ |
+| QuerYD | https://www.robots.ox.ac.uk/~vgg/data/queryd/ |
+| VideoChat | https://github.com/OpenGVLab/InternVideo/tree/main/Data/instruction_data |
+
+All paradigms share the same `(video, query, annotation)` triples; each applies
+its own formatting. Build the per-paradigm training files with:
 
 ```bash
-# raw → TRACE (Gen.) format
-python data/convert_internvid_to_trace.py ...
-# TRACE → DisTime (Cont.) format
-python data/convert_trace_to_distime.py ...
+python data/convert_internvid_to_trace.py ...   # raw  -> TRACE (Gen.) format
+python data/convert_trace_to_distime.py   ...   # TRACE -> DisTime (Cont.) format
+# the Text paradigm reuses the DisTime file directly (dataset reformats targets)
 ```
 
-A tiny sample (`data/distime_yttemporal_100.json`) is included for smoke tests.
-Download source videos/annotations from each dataset's official release.
-Expected per-sample JSON schema:
+Expected per-sample JSON schema consumed by `data/dataset.py`:
 
 ```json
 {"video": "path/to/video.mp4", "query": "...", "start": 10.5, "end": 15.2, "caption": "..."}
 ```
 
+### Evaluation benchmarks
+
+| Benchmark | Annotations | Videos |
+|---|---|---|
+| Charades-STA | https://github.com/jiyanggao/TALL (`charades_sta_{train,test}.txt`) | https://prior.allenai.org/projects/charades |
+| QVHighlights | https://github.com/jayleicn/moment_detr (`data/`) | same repo / YouTube |
+| YouCook2 | http://youcook2.eecs.umich.edu/ | http://youcook2.eecs.umich.edu/ |
+
+> Links are official project pages; verify the exact file names against each
+> repo, as dataset hosting occasionally moves.
+
 ---
 
 ## Training
 
-```bash
-# Cont. (DisTime) — choose backbone via the script / --model_type
-bash scripts/train_single_0.5b.sh          # SmolVLM2-0.5B
-bash scripts/train_single.sh               # SmolVLM2-2.2B
-bash scripts/train_fastvlm_single.sh       # FastVLM-1.5B
-bash scripts/train_single_molmo.sh         # Molmo2-4B
-bash scripts/train_molmo2_8b_distime.sh    # Molmo2-8B
+One example launcher per paradigm is provided; edit the paths inside, and pick
+the backbone with `--model_type`:
 
-# Gen. (TRACE)
-bash scripts/train_single_trace.sh
-bash scripts/train_single_trace_fast.sh
+```bash
+bash scripts/train_single.sh         # DisTime (Cont.)   — set MODEL_TYPE / --model_type
+bash scripts/train_single_trace.sh   # TRACE   (Gen.)
+bash scripts/train_single_text.sh    # Text numeral
+bash scripts/train_slurm_multinode.sh  # multi-node SLURM example
 ```
 
 `scripts/train.py` dispatches on `--model_type {smolvlm,fastvlm,molmo2}` and
-`--paradigm {distime,trace}`. Protocol (fixed across all runs): freeze vision
-encoder, LoRA (r=16, α=32) on the LLM, 32 frames, 1 epoch, AdamW lr 1e-4 cosine,
+`--paradigm {distime,trace,text}`. The five backbones (SmolVLM2-0.5B/2.2B,
+FastVLM-1.5B, Molmo2-4B/8B) are selected via `--model_type` + the corresponding
+`--model_name_or_path`. Protocol (fixed across all runs): freeze vision encoder,
+LoRA (r=16, α=32) on the LLM, 32 frames, 1 epoch, AdamW lr 1e-4 cosine,
 DeepSpeed ZeRO-2, bf16.
 
 **Ablations** (paper Fig. 6, SmolVLM2-2.2B):
@@ -129,11 +157,22 @@ DeepSpeed ZeRO-2, bf16.
 
 ## Evaluation
 
+Each evaluator is a Python entry point (run with `python eval/<file>.py --help`):
+
 ```bash
-bash eval/eval_charades.sh                       # Cont. on Charades-STA
-bash eval/eval_youcook2_distime.sh               # Cont. on YouCook2
-bash eval/eval_charades_trace_multi.slurm        # Gen. (needs TRACE)
-python eval/benchmarks/benchmark_efficiency.py   # params / latency / throughput / memory
+# Cont. (DisTime)
+python eval/evaluate_charades.py  --model_type smolvlm --checkpoint_dir <ckpt> --data_file <charades_test> --video_root <videos>
+python eval/evaluate_qvh.py       ...
+python eval/evaluate_youcook2.py  ...
+
+# Gen. (TRACE) — needs the external TRACE package (see Known gaps)
+python eval/evaluate_charades_trace.py ...
+
+# Text numeral
+python eval/evaluate_text.py --task charades --model_type smolvlm --checkpoint_dir <ckpt> --data_file <charades_test> --video_root <videos>
+
+# Efficiency profile
+python eval/benchmarks/benchmark_efficiency.py
 ```
 
 Metrics: Charades/QVH moment retrieval → R1@0.5, R1@0.7, mIoU; QVH highlight
